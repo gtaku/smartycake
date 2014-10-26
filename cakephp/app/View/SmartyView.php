@@ -34,8 +34,8 @@ class SmartyView extends View
     public $ext = '.tpl';
     public $pluginName = 'SmartyView';
 
-    public $smartyVersion;
-    public $smartyMajorVersion;
+    public $smartyVersion = '3.1.21';
+    public $smartyMajorVersion = 3;
 
     /**
      * SmartyView constructor
