@@ -55,6 +55,9 @@ class SmartyView extends View
 		$this->Smarty->error_reporting = 'E_ALL & ~E_NOTICE';
 		$this->Smarty->debugging = true;
 		$this->Smarty->caching = 0;
+        $this->Smarty->auto_literal = false;
+        $this->Smarty->left_delimiter = '<!--{';
+        $this->Smarty->right_delimiter = '}-->';
         switch ($this->smartyMajorVersion) {
             case 2:
                 $this->Smarty->clear_compiled_tpl();
